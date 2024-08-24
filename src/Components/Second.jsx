@@ -10,7 +10,7 @@ const Second = ({ cart, add, remove, warnMax, warnMin, maxItems }) => {
         <button
           onClick={add}
           disabled={cart == maxItems}
-          className=" border-[1px] border-[transparent] rounded-[8px] py-[.6em] px-[1.2em] text-[1em] font-medium font-sans bg-[#1a1a1a] pointer text-white disabled:cursor-not-allowed "
+          className=" border-[1px] border-[transparent] rounded-[8px] py-[.6em] px-[1.2em] text-[1em] font-medium font-sans bg-[#1a1a1a] pointer text-white disabled:cursor-not-allowed transition-all duration-500 hover:bg-teal-500 disabled:bg-[#b4b4b4]"
         >
           + Add
         </button>
@@ -20,7 +20,7 @@ const Second = ({ cart, add, remove, warnMax, warnMin, maxItems }) => {
         <button
           onClick={remove}
           disabled={cart == 0}
-          className=" border-[1px] border-[transparent] rounded-[8px] py-[.6em] px-[1.2em] text-[1em] font-medium font-sans bg-[#1a1a1a] pointer text-white disabled:cursor-not-allowed "
+          className=" border-[1px] border-[transparent] rounded-[8px] py-[.6em] px-[1.2em] text-[1em] font-medium font-sans bg-[#1a1a1a] pointer text-white disabled:cursor-not-allowed  transition-all duration-500 hover:bg-teal-500 disabled:bg-[#b4b4b4]"
         >
           - Remove
         </button>
